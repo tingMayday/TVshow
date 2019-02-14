@@ -1,0 +1,81 @@
+.detail{
+	.back{
+		display: flex;
+		align-items: center;
+		padding: .3rem;
+		.iconfont{
+			font-size: .2rem;
+			font-weight: bold;
+		}
+	}
+	.s-title{
+		padding: .3rem 0;
+	}
+	.wrap{
+		padding: 0 0 .5rem .3rem;
+		box-sizing: border-box;
+	}
+	.player{
+		padding-bottom: .3rem;
+		border-bottom: .01rem solid #272829;
+		p{
+			padding: .2rem .3rem;
+			&.info{
+				color: #ccc;
+				font-size: .2rem;
+			}
+			.iconfont{
+				padding: .1rem .5rem;
+				font-size: .4rem;
+				font-weight: bold;
+			}
+		}
+	}
+	.selection{
+		border-bottom: .01rem solid #272829;
+		ul{
+			overflow-x: auto;
+			li{
+				flex-shrink: 0;
+				width: .8rem;
+				height: .8rem;
+				margin-right: .2rem;
+				line-height: .8rem;
+				text-align: center;;
+				background: #363a43;
+				color: #666;
+				border-radius: .1rem;
+				box-sizing: border-box;
+			}
+		}
+	}
+	.starring{
+		border-bottom: .01rem solid #272829;
+		li{
+			display: inline-block;
+			padding-right: .5rem;
+			text-align: center;
+			.avatar{
+				position: relative;
+				width: 	1rem;
+				height: 1rem;
+				margin-bottom: .2rem;
+				border-radius: 50%;
+				overflow: hidden;
+				img{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+	.intro{
+		padding: 0 .3rem .5rem;
+		.content{
+			line-height: .5rem;
+			color: #999;
+		}
+	}
+}

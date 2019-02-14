@@ -1,0 +1,10 @@
+$bgColor: #1c1f25;
+$subBgColor: #24292b;
+$textColor: #e3b25e;
+$headerHeight: .75rem;
+
+@mixin ellipsis(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

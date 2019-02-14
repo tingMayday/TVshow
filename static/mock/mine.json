@@ -1,0 +1,93 @@
+{
+	"ret": true,
+	"data": {
+		"watchList": [{
+			"id": "001",
+			"poster": "/static/images/p0.png",
+			"name": "知否知否应是绿肥红瘦",
+			"update": 12
+		},{
+			"id": "002",
+			"poster": "/static/images/p1.png",
+			"name": "将夜",
+			"update": 8
+		},{
+			"id": "003",
+			"poster": "/static/images/p2.png",
+			"name": "我的恶魔少年",
+			"update": 20
+		},{
+			"id": "004",
+			"poster": "/static/images/p0.png",
+			"name": "知否知否应是绿肥红瘦",
+			"update": 12
+		},{
+			"id": "005",
+			"poster": "/static/images/p1.png",
+			"name": "将夜",
+			"update": 8
+		},{
+			"id": "006",
+			"poster": "/static/images/p2.png",
+			"name": "我的恶魔少年",
+			"update": 20
+		}],
+
+		"historyList": [{
+			"id": "001",
+			"poster": "/static/images/p0.png",
+			"name": "知否知否应是绿肥红瘦",
+			"update": 12,
+			"watched": 167
+		},{
+			"id": "002",
+			"poster": "/static/images/p1.png",
+			"name": "将夜",
+			"update": 8,
+			"watched": 45
+		},{
+			"id": "003",
+			"poster": "/static/images/p2.png",
+			"name": "我的恶魔少年",
+			"update": 20,
+			"watched": 3373
+		},{
+			"id": "004",
+			"poster": "/static/images/p0.png",
+			"name": "知否知否应是绿肥红瘦",
+			"update": 12,
+			"watched": 167
+		},{
+			"id": "005",
+			"poster": "/static/images/p1.png",
+			"name": "将夜",
+			"update": 8,
+			"watched": 45
+		},{
+			"id": "006",
+			"poster": "/static/images/p2.png",
+			"name": "我的恶魔少年",
+			"update": 20,
+			"watched": 3373
+		},{
+			"id": "007",
+			"poster": "/static/images/p0.png",
+			"name": "知否知否应是绿肥红瘦",
+			"update": 12,
+			"watched": 167
+		},{
+			"id": "008",
+			"poster": "/static/images/p1.png",
+			"name": "将夜",
+			"update": 8,
+			"watched": 45
+		},{
+			"id": "009",
+			"poster": "/static/images/p2.png",
+			"name": "我的恶魔少年",
+			"update": 20,
+			"watched": 3373
+		}]
+	 }
+}
+  

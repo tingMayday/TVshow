@@ -1,0 +1,38 @@
+{
+    "ret": true,
+    "data": {
+        "user": {
+            "name": "智障250",
+            "avatar": "/static/images/avatar.jpeg"
+        },
+
+        "playList": [{
+            "id": "0001",
+            "poster": "/static/images/p0.png",
+            "update": 20,
+            "score": 10,
+            "name": "知否知否应是绿肥红瘦",
+            "intro": "赵丽颖冯绍峰琴瑟和鸣",
+            "actors": ["赵丽颖","冯绍峰","朱一龙","施诗"],
+            "collected": false
+          },{
+            "id": "0002",
+            "poster": "/static/images/p1.png",
+            "update": 16,
+            "score": 8,
+            "name": "将夜",
+            "intro": "少年逆天而行热血复仇",
+            "actors": ["陈飞宇","宋伊人","袁冰妍","孟子义"],
+            "collected": false
+          },{
+            "id": "0003",
+            "poster": "/static/images/p2.png",
+            "update": 40,
+            "score": 9.6,
+            "name": "我的恶魔少年",
+            "intro": "初七夫妇甜蜜再度来袭",
+            "actors": ["贾征宇","余心恬","朱俊玮","汤志伟"],
+            "collected": false
+        }]
+    }
+}

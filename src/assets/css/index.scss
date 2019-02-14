@@ -1,0 +1,170 @@
+// home
+.header{
+	padding: .5rem .4rem 0;
+	.avatar{
+		width: .5rem;
+		height: .5rem;
+		margin-right: .2rem;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.iconfont{
+		font-weight: bold;
+	}
+}
+#home{
+	.playlist{
+		padding: .5rem .4rem;
+		li{
+			margin-bottom: 0.375rem;
+			background: $subBgColor;
+			border-radius: 0.125rem;
+			overflow: hidden;
+			.poster{
+				position: relative;
+				display: block;
+				.episodes{
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					padding: .3rem;
+					font-size: .1rem;
+					background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,1));
+					box-sizing: border-box;
+				}
+			}
+			.name{
+				padding: .3rem .5rem .1rem;
+				font-size: .3rem;
+			}
+			.info{
+				padding: .1rem .5rem;
+				line-height: $headerHeight;
+				font-size: .1rem;
+				.borderr{
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 50%;
+						width: 1px;
+						height: 1rem;
+						background: #797979;
+						transform: translateY(-50%);
+					}
+				}
+				.collect{
+					padding-left: 0.5rem;
+					line-height: .6rem;
+					text-align: center;
+					.iconfont{
+						font-size: 0.6rem;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}	
+}
+
+// mine
+.mine{
+	.user{
+		padding: 1rem 0;
+		text-align: center;
+		.avatar{
+			display: inline-block;
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.name{
+			padding-top: .2rem;
+		}
+	}
+	.wrap{
+		margin-bottom: .2rem;
+		padding: 0 .2rem .3rem;
+		background: #24292b;
+		.title{
+			padding: .3rem .2rem;
+		}
+		.watch{
+			flex-wrap: wrap;
+			li{
+				width: 50%;
+				padding: 0 .2rem .2rem;
+				text-align: center;
+				box-sizing: border-box;
+				.poster{
+					border-radius: .2rem;
+					overflow: hidden;
+				}
+				.name{
+					padding-top: .2rem;
+				}
+			}
+		}
+		.history{
+			overflow-x: auto;
+			li{
+				flex-shrink: 0;
+				width: 45%;
+				padding: 0 .2rem;
+				.poster{
+					position: relative;
+					border-radius: .2rem;
+					overflow: hidden;
+					.update{
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						padding: .1rem .2rem;
+						font-size: .1rem;
+						background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,1));
+						box-sizing: border-box;
+						z-index: 1;
+					}
+				}
+				.name{
+					padding-top: .2rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.play-list{
+	padding: .3rem;
+	.back{
+		display: flex;
+		align-items: center;
+		padding: .3rem 0;
+		.iconfont{
+			font-size: .2rem;
+			font-weight: bold;
+		}
+	}
+	li{
+		padding: .2rem 0;
+		.poster{
+			width: 3rem;
+			border-radius: .1rem;
+			overflow: hidden;
+		}
+		.info{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding-left: .2rem;
+			line-height: .8rem;
+			.detail{
+				color: #ccc;
+				font-size: .2rem;
+			}
+		}
+	}
+}
