@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     getPlaylist(){
-      axios.get('/home')  //注意路径
+      axios.get('/home')
         .then(this.getPlaylistSucc)
     },
     getPlaylistSucc(res){
@@ -50,15 +50,12 @@ export default {
     },
 
     addCollect(){
-      console.log(6666)
       let layer = this.$refs.layer
       layer.open({
-        type: 1, 
-        content: '已加入看单',  // 内容
+        content: '已加入看单',
         callback () {
           console.log('已经消失')
-        },
-        shadeClose: true // 点击空白区域是否隐藏此弹出框  默认是false
+        }
       })
     }
   },
