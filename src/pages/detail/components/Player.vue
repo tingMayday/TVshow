@@ -8,10 +8,10 @@
         <p>
         	<span>{{playerData.name}}</span>
         	<span @click="addCollect('已取消看单')" v-if="playerData.collected">
-                <i class="iconfont color-e3b25e">&#xe61b;</i>
+                <i class="iconfont color-e3b25e">&#xe60d;</i>
             </span>
             <span @click="addCollect('已加入看单')"  v-else>
-                <i class="iconfont color-e3b25e">&#xe61e;</i>
+                <i class="iconfont color-e3b25e">&#xe666;</i>
             </span>
         </p>
         <p class="info">{{playerData.score}}分·{{playerData.type}}·全{{playerData.episode}}集·{{playerData.playVolume}}</p>

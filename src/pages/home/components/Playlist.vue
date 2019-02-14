@@ -15,11 +15,11 @@
           <p>主演：赵丽颖/冯绍峰/朱一龙/施诗</p>
         </div>
         <div class="collect color-e3b25e" @click="addCollect(index, '已取消看单')" v-if="item.collected" >
-          <i class="iconfont">&#xe61e;</i>
-          <p>已加看单</p>
+          <i class="iconfont">&#xe60d;</i>
+          <p>已加入</p>
         </div>
         <div class="collect color-e3b25e" @click="addCollect(index, '已加入看单')" v-else>
-          <i class="iconfont">&#xe61b;</i>
+          <i class="iconfont">&#xe666;</i>
           <p>加入看单</p>
         </div>
       </div>

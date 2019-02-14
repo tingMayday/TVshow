@@ -49,11 +49,11 @@ export default {
       }
     },
 
-    addCollect(idx, con){
+    addCollect(data){
       let layer = this.$refs.layer
-      this.playlist[idx].collected = !this.playlist[idx].collected
+      this.playlist[data.idx].collected = !this.playlist[data.idx].collected
       layer.open({
-        content: con,
+        content: data.con,
         callback () {
           // this.playlist[idx].collected = !this.playlist[idx].collected
         }
