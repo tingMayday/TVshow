@@ -49,12 +49,13 @@ export default {
       }
     },
 
-    addCollect(){
+    addCollect(idx, con){
       let layer = this.$refs.layer
+      this.playlist[idx].collected = !this.playlist[idx].collected
       layer.open({
-        content: '已加入看单',
+        content: con,
         callback () {
-          console.log('已经消失')
+          // this.playlist[idx].collected = !this.playlist[idx].collected
         }
       })
     }

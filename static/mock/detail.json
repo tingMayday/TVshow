@@ -28,7 +28,8 @@
             "score": "9",
             "episode": "50",
             "type": "古装",
-            "playVolume": "29.4亿"
+            "playVolume": "29.4亿",
+            "collected": false
         },
         "played": 35,
         "starring": [{
