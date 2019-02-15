@@ -163,6 +163,7 @@
 	}
 }
 
+// play list
 .play-list{
 	padding: .3rem;
 	.back{
@@ -176,6 +177,34 @@
 	}
 	li{
 		padding: .2rem 0;
+		label{
+			padding-right: .2rem;
+			input {
+			  	position: relative;
+			  	width: 0.35rem;
+			  	height: 0.35rem;
+			  	background-color: #ffffff;
+			  	border-radius: 50%;
+			  	cursor: default;
+				appearance: none;
+				transition: background-color ease 0.6s;
+			  	&:checked {
+				 	background: #e5b44e;
+				}
+				&:checked::after {
+				  	content: '';
+				  	position: absolute;
+				  	top: 0.08rem;
+				  	left: 0.08rem;
+				  	height: 0.08rem;
+				  	width: 0.15rem;
+				  	border: #fff solid 3px;
+				  	border-top: none;
+				  	border-right: none;
+				  	transform: rotate(-45deg);
+				}
+			}
+		}
 		.poster{
 			width: 3rem;
 			border-radius: .1rem;
@@ -190,6 +219,29 @@
 			.detail{
 				color: #ccc;
 				font-size: .2rem;
+			}
+		}
+	}
+	.btnarea{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: #fff;
+		background: #1c1f25;
+		z-index: 9;
+		&.editbtn{
+			padding: .5rem 0;
+			text-align: center;
+			color: #e5b44e;
+		}
+		.btn{
+			flex: 1;
+			display: block;
+			padding: .5rem 0;
+			text-align: center;
+			&.delebtn{
+				color: #ff0000;
 			}
 		}
 	}

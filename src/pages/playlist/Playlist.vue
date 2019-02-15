@@ -7,6 +7,9 @@
     </div>
     <ul>
       <li v-for="item of list" :key="item.id" class="flex">
+        <label v-if="showedit">
+          <input type="checkbox" />
+        </label>
         <router-link class="poster" :to="'/detail/' + item.id">
           <img :src="item.poster">
         </router-link>
@@ -20,19 +23,28 @@
         </div>
       </li>
     </ul>
-    
-
+    <p @click="edit"  v-if="!showedit" class="btnarea editbtn">编辑</p>
+    <p v-if="showedit" class="btnarea flex">
+      <span class="btn cancelbtn" @click="cancel">取消</span>
+      <span class="btn delebtn" @click="dele">删除</span>
+    </p>
+    <layer ref="layer" @update="cancel"></layer>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import Layer from 'common/layer/Layer'
 export default {
   name: 'Playlist',
+  components: {
+    Layer
+  },
   data(){
     return{
       list: [],
-      type: ''
+      type: '',
+      showedit: false
     }
   },
   mounted(){
@@ -54,7 +66,6 @@ export default {
           this.list= res.data.historyList
           this.list.forEach((k) => {
             k.watchedT = this.formatTime(k.watched)
-            console.log(k)
           })
         }
       }
@@ -71,6 +82,23 @@ export default {
         minute: minuteTime,
         second: secondTime
       }
+    },
+
+    edit(){
+      this.showedit = true
+    },
+
+    cancel(){
+      this.showedit = false
+    },
+
+    dele() {
+      // 显示弹框
+      let layer = this.$refs.layer
+      layer.open({
+        content: '确认要删除所选的内容吗？',
+        type: 2
+      })
     }
 
   }
