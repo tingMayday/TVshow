@@ -55,9 +55,13 @@ img{width: 100%;}
 	line-height: .45rem;
 	background: $bgColor;
 	color: #ccc;
+	font-size: .2rem;
 	text-align: center;
 	box-sizing: border-box;
+	.router-link-exact-active{
+		color: #E4B357;
+	}
 	.iconfont{
-		font-size: .5rem;
+		font-size: .4rem;
 	}
 }
