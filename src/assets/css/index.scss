@@ -8,8 +8,33 @@
 		border-radius: 50%;
 		overflow: hidden;
 	}
-	.iconfont{
-		font-weight: bold;
+	.search{
+		position: relative;
+		.iconfont{
+			position: absolute;
+			right: .1rem;
+			top: 50%;
+			font-weight: bold;
+			transform: translateY(-50%);
+			transition: all 0.5s;
+		}
+		input{
+			padding: .02rem .2rem;
+			color: $textColor;
+			background: none;
+			border: .01rem solid $textColor;
+			border-radius: 1rem;
+			&:focus{
+				box-shadow: 0 0 .1rem $textColor;
+			}
+			&.show-enter-active, &.show-leave-active{
+		      transition: all 0.5s;
+		    }
+		    &.show-enter, &.show-leave-active{
+		      width: 0;
+		      transform: scale(0);
+		    }
+		}
 	}
 }
 #home{

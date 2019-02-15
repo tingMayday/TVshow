@@ -7,8 +7,11 @@
         </div>
         <span>{{user.name}}</span>
       </div>
-      <div class="search">
-        <i class="iconfont">&#xe632;</i>
+      <div class="search" @click="showSearch">
+        <transition name="show">
+          <input type="text" name="search" placeholder="输入关键词" v-if="serchInput" @blur="hideSeach" v-focus>
+        </transition>
+        <i class="iconfont" v-if="!serchInput">&#xe632;</i>
       </div>
     </div>
     <home-playlist :list="playlist" @addCollect="addCollect"></home-playlist>
@@ -33,7 +36,8 @@ export default {
   data() {
     return {
       playlist: [],
-      user: {}
+      user: {},
+      serchInput: false
     }
   },
   methods: {
@@ -51,17 +55,29 @@ export default {
 
     addCollect(data){
       let layer = this.$refs.layer
+      let _this = this
       this.playlist[data.idx].collected = !this.playlist[data.idx].collected
       layer.open({
-        content: data.con,
-        callback () {
-          // this.playlist[idx].collected = !this.playlist[idx].collected
-        }
+        content: data.con
       })
+    },
+
+    showSearch(){
+      this.serchInput = true
+    },
+    hideSeach(){
+      this.serchInput = false
     }
   },
   mounted () {
     this.getPlaylist()
+  },
+  directives: {
+    focus: {
+      inserted: function (el) {
+        el.focus()
+      }
+    }
   }
 }
 </script>
